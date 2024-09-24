@@ -8,6 +8,8 @@ from django.views.generic import (
 from django.urls import reverse_lazy
 from .models import Post
 
+from django.contrib.auth.mixins import LoginRequiredMixin
+
 
 class PostListView(ListView):
     template_name = "posts/list.html"
@@ -17,13 +19,17 @@ class PostDetailView(DetailView):
     template_name = "posts/detail.html"
     model = Post
 
-class PostCreateView(CreateView):
+class PostCreateView(LoginRequiredMixin, CreateView):
     template_name = "posts/new.html"
     model = Post
     fields = [
-        "title", "subtitle", "author",
+        "title", "subtitle",
         "body", "status"
     ]
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
 
 class PostUpdateView(UpdateView):
     template_name = "posts/edit.html"

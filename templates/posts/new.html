@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}New Post{% endblock title %}
+
+{% block content %}
+<body style="background-image: linear-gradient(to right top, #412dc8, #3a45cb, #3b58cb, #4568c9, #5577c4, #5d88c8, #6d99c9, #82a8ca, #99bed4, #b6d3de, #d7e7eb, #f9fbfb);">
+    <div class="container">
+        <h1>New Post</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-success" value="Create">
+        </form>
+    </div>
+</body>
+{% endblock content %}
