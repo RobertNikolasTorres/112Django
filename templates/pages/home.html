@@ -8,8 +8,20 @@
 
 </head>
 <body>
-    <h1 style="text-align: center; color: black; font-weight: bolder; text-decoration: underline;">Home</h1>
-    <p style="text-align: center;font-weight: bold;">Welcome to my home page!</p>
-    <img src="{% static 'img/catStare.jpg' %}" style="width: 100%; padding-left: 60px;padding-right: 60px;"></body>
+    <h1 style="font-weight: bolder; padding-bottom: 20px;">The Blog</h1>
+        <div style="height: 100%; margin-bottom: 200px; border-radius: 20px; border-color: yellow; border-style: double; background-image: radial-gradient(circle, #00d7f8, #00bbec, #009fdd, #0083ca, #0067b3, #0b59a0, #104b8d, #103e7b, #153a6b, #1a365c, #1f324c, #222d3d);">
+            <!-- <h1 style="color: white;  ">Home</h1> -->
+            <!-- <p style="text-align: center;font-weight: bold;">Welcome to my home page!</p>       -->
+            <div style="display: flex; flex-direction: column;"         class="container">
+                <img src="{% static 'img/home.jpeg' %}" style="border-radius: 20px; margin: auto;">
+            </div>
+        </div>
+    <div class="container" style="-ms-flex-align: center;">
+        <img src="{% static 'img/coffee.webp' %}" class="image-container">
+    </div>
+    
+    <!-- <img src="{% static 'img/catStare.jpg' %}" style="width: 100%; padding-left: 60px;padding-right: 60px;"> -->
+
+</body>
 
 {% endblock content %}

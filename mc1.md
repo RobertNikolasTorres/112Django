@@ -27,3 +27,14 @@ Remember: It is not cheating to check the previous project, all mini challenges 
 2.1. template_name = "registration/password_change_done.html"
 3. Test, ensuring that it is possible to set a new password with the modified forms.
 4. Add a link somewhere on your site, that allows users to access this feature (password_change).
+
+# Mini Challenge 3
+## Password Reset Template Override
+### Acceptance Criteria
+1. Test the password reset flow, so you know how to override the templates and what to put on them.
+2. Then, override these templates:
+2.1 "registration/password_reset_form.html"
+2.2 "registration/password_reset_done.html"
+2.3 "registration/password_reset_confirm.html"
+2.4 "registration/password_reset_complete.html"
+3. Test your changes and make sure the flow isn't broken and that the feature is intuitive.

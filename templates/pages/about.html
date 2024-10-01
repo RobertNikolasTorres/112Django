@@ -1,17 +1,26 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}Abou{% endblock title %}
+{% block title %}About{% endblock title %}
 
 {% block content %}
 <head>
     <!---->
 </head>
 <body>
-
-    <h1>About</h1>
-    <p>Hello!!</p>
-    <img src="" alt="">
+    <h1 style="font-weight: bolder; padding-bottom: 20px;">About The Blog</h1>
+    <div class="clearfix">
+        <img src="{% static 'img/catStare.jpg' %}" style="border-radius: 40px;" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum autem rerum blanditiis? Eos aspernatur iure blanditiis vel beatae, cupiditate impedit dolorem repudiandae alias illo hic provident? Ullam assumenda voluptatum natus.
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis quibusdam laborum quasi laboriosam perferendis vitae consequuntur dolorem quae obcaecati aut libero ducimus impedit, alias velit necessitatibus officiis delectus blanditiis ea.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, aspernatur ad nostrum, quam laborum incidunt aliquam eius ut veniam enim laudantium esse asperiores impedit similique facere nulla fugit mollitia libero.
+        </p>
+    </div>
 </body>
 
 {% endblock content %}

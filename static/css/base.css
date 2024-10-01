@@ -1,3 +1,37 @@
-.h1 {
-    color: red;
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+p {
+    font-size: 28px;
+}
+
+.container {
+    margin: 5%;
+  
+
+} 
+.container1 {
+    color: black;
+}
+.divv {
+    border-color: black;
+    border: 10px;
+}
+
+body {
+ 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically if the container has a height */
+    margin: auto;
+    height: 150px;
+}
+
+img {
+    max-width: 100%; /* Ensures the image scales properly */
+    height: auto; /* Keeps the aspect ratio */
 }
